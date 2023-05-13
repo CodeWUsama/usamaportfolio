@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 5%;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 .link {
@@ -10,6 +13,14 @@
   cursor: pointer;
   outline: none;
   font-size: 16px;
+  &:hover {
+    color: var(--base);
+  }
+}
+
+.linkActive {
+  color: var(--base);
+  font-weight: 500;
 }
 
 .linksCont {

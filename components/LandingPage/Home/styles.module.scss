@@ -9,13 +9,14 @@
 
 .arrowCont {
   background-color: var(--base);
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 80px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .headingPrimary {

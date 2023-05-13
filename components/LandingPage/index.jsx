@@ -1,10 +1,10 @@
-import Home from '@/components/Home';
+import Home from '@/components/LandingPage/Home';
 import Navbar from '@/components/Shared/Navbar';
 
 const LandingPage = () => (
   <div>
     <Navbar />
-    <Home />
+    <Home id="Home" />
   </div>
 );
 
