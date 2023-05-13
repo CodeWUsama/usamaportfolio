@@ -1,3 +1,5 @@
+import { Link } from 'react-scroll';
+
 import TypeAnimation from '@/components/Shared/TypeAnimation';
 import animationData from '@/public/animations/development.json';
 import ArrowDownIcon from '@/public/assets/arrow-down.svg';
@@ -25,9 +27,9 @@ const Home = ({ id }) => (
         <LottiePlayer animationData={animationData} className={styles.animation} />
       </div>
     </div>
-    <div className={styles.arrowCont}>
+    <Link to="Skills" spy={true} smooth={true} offset={-75} duration={500} className={styles.arrowCont}>
       <ArrowDownIcon />
-    </div>
+    </Link>
   </div>
 );
 
