@@ -1,2 +1,14 @@
-.root {
+body {
+  --base: #407bff;
+  --secondary: #444444;
+
+  p,
+  div,
+  button {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary);
+    font-weight: 400;
+    margin: 0;
+  }
 }
