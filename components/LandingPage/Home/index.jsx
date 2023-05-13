@@ -21,7 +21,7 @@ const Home = ({ id }) => (
           Talk with me about <TypeAnimation />
         </p>
       </div>
-      <div>
+      <div className={styles.rightCont}>
         <LottiePlayer animationData={animationData} className={styles.animation} />
       </div>
     </div>

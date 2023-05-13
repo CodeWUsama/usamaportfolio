@@ -62,3 +62,26 @@
 .hidden {
   visibility: hidden;
 }
+
+@media (max-width: 900px) {
+  .root {
+    padding: 30px;
+    margin: 0;
+  }
+  .mainCont {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .leftCont {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .rightCont {
+    display: none;
+  }
+  .root {
+    padding: 15px;
+  }
+}
