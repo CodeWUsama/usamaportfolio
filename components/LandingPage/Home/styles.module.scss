@@ -75,6 +75,9 @@
   .leftCont {
     width: 100%;
   }
+  .arrowCont {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 600px) {

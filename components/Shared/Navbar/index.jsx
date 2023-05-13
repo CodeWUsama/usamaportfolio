@@ -71,6 +71,7 @@ const Navbar = () => {
                     smooth={true}
                     offset={-75}
                     duration={500}
+                    onClick={toggleDrawer}
                   >
                     {title}
                   </ScrollLink>
