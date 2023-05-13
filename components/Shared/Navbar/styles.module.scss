@@ -1,6 +1,7 @@
-.root {
+.rootWeb {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 5%;
   position: sticky;
   top: 0;
@@ -26,4 +27,55 @@
 .linksCont {
   display: flex;
   gap: 40px;
+}
+
+.rootMobile {
+  display: none;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  svg {
+    cursor: pointer;
+  }
+}
+
+.mobileLinksCont {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px;
+}
+
+.drawer {
+  max-width: 300px;
+}
+
+.crossCont {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.linkRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .rootWeb {
+    padding: 10px 15px;
+  }
+  .linksCont {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 670px) {
+  .rootWeb {
+    display: none;
+  }
+  .rootMobile {
+    display: flex;
+  }
 }

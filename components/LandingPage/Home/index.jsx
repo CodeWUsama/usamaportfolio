@@ -15,7 +15,7 @@ const Home = ({ id }) => (
         <p className={styles.headingPrimary}>Usama Bilal</p>
         <p className={styles.text}>
           A passionate Software Engineer, specialized in web development using React & Node JS. I create amazing web
-          applications to make the internet a better place. I am currently working as a Software Engineer at Devsinc
+          applications to make the internet a better place. I am currently working as a Software Engineer at Devsinc.
         </p>
         <p className={styles.text}>
           Talk with me about <TypeAnimation />
