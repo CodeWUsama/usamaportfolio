@@ -49,7 +49,7 @@ const Footer = () => (
       <h3 className={styles.footerText}>
         © {new Date().getFullYear()} Made with love - <strong>Usama Bilal</strong>
       </h3>
-      <Image alt="Usama Bilal" src={UsamaBilal} className={styles.icon} />
+      <Image alt="Usama Bilal" src={UsamaBilal} className={styles.icon} title="Usama Bilal" />
     </div>
   </div>
 );

@@ -10,7 +10,7 @@ const Home = () => (
       <link rel="icon" href="/assets/usamabilal-circular.png" />
       <meta
         name="description"
-        content="Usama Bilal - software engineer having expertise in web development particularly as Frontend Developer. Usama Bilal is open to work as a React developer, Frontend developer or Fullstack developer"
+        content="Usama Bilal - software engineer having expertise in web development particularly as Frontend Developer. Usama Bilal is open to work as a React developer, Frontend developer or Fullstack developer posts."
       />
       <meta
         name="keywords"
