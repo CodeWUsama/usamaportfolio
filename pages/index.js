@@ -11,7 +11,7 @@ const Home = () => (
       <meta property="og:title" content="Usama Bilal - Software Engineer" />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="http://usamabilal.com/" />
-      <meta property="og:image" content="https://i.ibb.co/ByGSHLc/usamabilal.png" />
+      <meta property="og:image" content={process.env.NEXT_PUBLIC_OG_IMAGE} />
     </Head>
     <LandingPage />;
   </>
