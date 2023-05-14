@@ -12,6 +12,10 @@ const Home = () => (
       <meta property="og:type" content="article" />
       <meta property="og:url" content="http://usamabilal.com/" />
       <meta property="og:image" content={process.env.NEXT_PUBLIC_OG_IMAGE} />
+      <meta
+        property="og:description"
+        content="A passionate Software Engineer, specialized in web development using React & Node JS. I create amazing web applications to make the internet a better place."
+      />
     </Head>
     <LandingPage />;
   </>
