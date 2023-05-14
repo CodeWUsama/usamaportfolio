@@ -5,22 +5,14 @@ import clsx from 'clsx';
 import Link from 'next/link';
 
 import { RESUME_LINK } from '@/constants/links';
-import ContactIcon from '@/public/assets/contact.svg';
+import { LINKS, LINKS_ICONS } from '@/constants/navigation';
 import CrossIcon from '@/public/assets/cross.svg';
-import EducationIcon from '@/public/assets/education.svg';
-import ExperienceIcon from '@/public/assets/experience.svg';
-import HomeIcon from '@/public/assets/home.svg';
 import MenuIcon from '@/public/assets/menu.svg';
-import ProjectsIcon from '@/public/assets/projects.svg';
-import SkillsIcon from '@/public/assets/skills.svg';
 
 import Button from '../Button/Button';
 
 import 'react-modern-drawer/dist/index.css';
 import styles from './styles.module.scss';
-
-const LINKS = ['Home', 'Skills', 'Experience', 'Education', 'Projects', 'Contact'];
-const LINKS_ICONS = [HomeIcon, SkillsIcon, ExperienceIcon, EducationIcon, ProjectsIcon, ContactIcon];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
