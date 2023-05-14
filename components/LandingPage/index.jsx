@@ -11,7 +11,7 @@ const LandingPage = () => (
     <Navbar />
     <Home id="Home" />
     <Skills id="Skills" />
-    <Experiences id="Experience" />
+    <Experiences id="Experiences" />
     <Footer />
   </div>
 );

@@ -14,7 +14,7 @@ const Home = ({ id }) => (
     <div className={styles.mainCont}>
       <div className={styles.leftCont}>
         <p className={styles.headingSecondary}>I am</p>
-        <p className={styles.headingPrimary}>Usama Bilal</p>
+        <h1 className={styles.headingPrimary}>Usama Bilal</h1>
         <p className={styles.text}>
           A passionate software engineer, specialized in web development using React & Node JS. I create amazing web
           applications to make the internet a better place. I am currently working as a Software Engineer at Devsinc.
