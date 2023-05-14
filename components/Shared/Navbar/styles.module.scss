@@ -6,6 +6,7 @@
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 100000;
 }
 
 .link {
@@ -60,6 +61,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.shadow {
+  box-shadow: #eaecee 0px 1px 2px 0px;
+  -webkit-box-shadow: #eaecee 0px 1px 2px 0px;
+  -moz-box-shadow: #eaecee 0px 1px 2px 0px;
 }
 
 @media (max-width: 900px) {

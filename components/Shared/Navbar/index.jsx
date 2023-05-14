@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Drawer from 'react-modern-drawer';
 import { Link as ScrollLink } from 'react-scroll';
+import clsx from 'clsx';
 import Link from 'next/link';
 
 import { RESUME_LINK } from '@/constants/links';
@@ -23,14 +24,28 @@ const LINKS_ICONS = [HomeIcon, SkillsIcon, ExperienceIcon, EducationIcon, Projec
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
 
+  useEffect(() => {
+    window.onscroll = function () {
+      if (window.scrollY > 75) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    return () => {
+      window.onscroll = () => {};
+    };
+  }, []);
+
   return (
     <>
-      <div className={styles.rootWeb}>
+      <div className={clsx(styles.rootWeb, scrolled && styles.shadow)}>
         <div className={styles.linksCont}>
           {LINKS.map((title) => (
             <ScrollLink

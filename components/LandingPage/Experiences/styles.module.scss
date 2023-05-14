@@ -73,6 +73,10 @@
   flex: 1;
 }
 
+.descItem {
+  text-align: justify;
+}
+
 @media (max-width: 500px) {
   .root {
     gap: 30px;

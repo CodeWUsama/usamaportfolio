@@ -19,7 +19,9 @@ const Experiences = ({ id }) => (
           <div className={styles.divider} />
           <ul className={styles.listCont}>
             {description.map((el) => (
-              <li key={el}>{el}</li>
+              <li key={el} className={styles.descItem}>
+                {el}
+              </li>
             ))}
           </ul>
         </div>
