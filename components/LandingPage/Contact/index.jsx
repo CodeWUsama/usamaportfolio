@@ -13,10 +13,12 @@ const Contact = ({ id }) => (
       {SOCIAL_LINKS.map(({ title, link, iconLarge: Icon }) => (
         <div className={styles.experienceCont} key={link}>
           <div className={styles.head}>
-            <Icon />
+            <Icon onClick={() => window.open(link, '_blank')} className={styles.icon} />
           </div>
           <div className={styles.linkCont}>
-            <p className={styles.expSubHeading}>{title || link.replace('https://', '')}</p>
+            <a className={styles.expSubHeading} href={link} target="_blank" rel="noreferrer">
+              {title || link.replace('https://', '')}
+            </a>
           </div>
         </div>
       ))}
