@@ -26,7 +26,7 @@ const Footer = () => (
             return (
               <div className={styles.linkCont} key={link}>
                 <Icon />
-                <Link to={link} className={styles.link} spy={true} smooth={true} offset={-75} duration={500}>
+                <Link to={link} className={styles.link} spy={true} smooth={true} offset={-70} duration={500}>
                   {link}
                 </Link>
               </div>

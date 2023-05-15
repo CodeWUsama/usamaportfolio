@@ -1,5 +1,6 @@
 .root {
-  min-height: calc(100vh - 75px);
+  height: calc(100vh - 70px);
+  max-height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -86,5 +87,6 @@
   }
   .root {
     padding: 15px;
+    max-height: fit-content;
   }
 }

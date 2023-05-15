@@ -24,7 +24,7 @@ const Navbar = () => {
 
   useEffect(() => {
     window.onscroll = function () {
-      if (window.scrollY > 75) {
+      if (window.scrollY > 70) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -47,7 +47,7 @@ const Navbar = () => {
               className={styles.link}
               spy={true}
               smooth={true}
-              offset={-75}
+              offset={-70}
               duration={500}
             >
               {title}
@@ -76,7 +76,7 @@ const Navbar = () => {
                     className={styles.link}
                     spy={true}
                     smooth={true}
-                    offset={-75}
+                    offset={-70}
                     duration={500}
                     onClick={toggleDrawer}
                   >

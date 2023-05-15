@@ -6,7 +6,7 @@ const Experiences = ({ id }) => (
   <div className={styles.root} id={id}>
     <p className={styles.heading}>Experiences</p>
     <p className={styles.text}>
-      Bringing over 2 years of experience in designing and developing innovative and user-centric web solutions.{' '}
+      Bringing over 2 years of experience in designing and developing innovative and user-centric web solutions.
     </p>
     <div className={styles.experiencesCont}>
       {EXPERIENCES.map(({ company, tenure, title, description }) => (
