@@ -11,7 +11,7 @@ const SOCIAL_LINKS = [
     icon: GmailIcon,
   },
   {
-    link: 'https://www.linkedin.com/in/usama-bilal-a08504173',
+    link: 'https://www.linkedin.com/in/usamabilal775',
     icon: LinkedinIcon,
   },
   {

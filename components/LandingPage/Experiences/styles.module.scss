@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: calc(100vh - 70px);
+  height: calc(100vh - 70px);
+  max-height: 700px;
 }
 
 .heading {
@@ -40,6 +41,7 @@
   box-shadow: 0px 0px 5px 0px #eaecee;
   -webkit-box-shadow: 0px 0px 5px 0px #eaecee;
   -moz-box-shadow: 0px 0px 5px 0px #eaecee;
+  margin-bottom: 50px;
 }
 
 .expSubHeading {
@@ -88,5 +90,12 @@
   .text {
     margin-top: 0px;
     text-align: justify;
+  }
+}
+
+@media (max-width: 1090px) {
+  .root {
+    height: fit-content;
+    max-height: fit-content;
   }
 }

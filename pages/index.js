@@ -6,7 +6,7 @@ import LandingPage from '../components/LandingPage';
 const Home = () => (
   <>
     <Head>
-      <title>Usama Bilal</title>
+      <title>Usama Bilal - Web Developer</title>
       <link rel="icon" href="/assets/usamabilal-circular.png" />
       <meta
         name="description"
@@ -14,7 +14,7 @@ const Home = () => (
       />
       <meta
         name="keywords"
-        content="Usama, Bilal, Usama Bilal, React Developer, Frontend Developer, Frontend Engineer, Fullstack Developer"
+        content="Usama, Bilal, Usama Bilal, React Developer, Frontend Developer, Frontend Engineer, Fullstack Developer, Web Developer"
       />
       <meta name="author" content="Usama Bilal" />
       <meta property="og:title" content="Usama Bilal - Software Engineer" />
