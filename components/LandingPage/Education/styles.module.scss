@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
+  height: calc(100vh - 70px);
+  max-height: 700px;
 }
 
 .heading {
@@ -90,5 +92,12 @@
   .text {
     margin-top: 0px;
     text-align: justify;
+  }
+}
+
+@media (max-width: 740px) {
+  .root {
+    height: fit-content;
+    max-height: fit-content;
   }
 }
