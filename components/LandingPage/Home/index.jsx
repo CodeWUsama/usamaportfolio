@@ -27,7 +27,7 @@ const Home = ({ id }) => (
         <LottiePlayer animationData={animationData} className={styles.animation} />
       </div>
     </div>
-    <Link to="Skills" spy={true} smooth={true} offset={-75} duration={500} className={styles.arrowCont}>
+    <Link to="Skills" spy={true} smooth={true} offset={-80} duration={500} className={styles.arrowCont}>
       <ArrowDownIcon />
     </Link>
   </div>

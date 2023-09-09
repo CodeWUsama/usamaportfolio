@@ -82,6 +82,19 @@
   text-align: justify;
 }
 
+.title {
+  font-weight: 500;
+}
+
+.tenure {
+  font-size: 14px;
+  text-align: right;
+}
+
+.companyLink {
+  text-decoration: none;
+}
+
 @media (max-width: 500px) {
   .root {
     gap: 30px;

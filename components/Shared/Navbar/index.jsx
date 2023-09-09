@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import Drawer from 'react-modern-drawer';
 import { Link as ScrollLink } from 'react-scroll';
 import clsx from 'clsx';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { RESUME_LINK } from '@/constants/links';
 import { LINKS, LINKS_ICONS } from '@/constants/navigation';
 import CrossIcon from '@/public/assets/cross.svg';
 import MenuIcon from '@/public/assets/menu.svg';
+import UsamaBilal from '@/public/assets/usamabilal-circular.png';
 
 import Button from '../Button/Button';
 
@@ -24,7 +26,7 @@ const Navbar = () => {
 
   useEffect(() => {
     window.onscroll = function () {
-      if (window.scrollY > 70) {
+      if (window.scrollY > 80) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -39,6 +41,7 @@ const Navbar = () => {
     <>
       <div className={clsx(styles.rootWeb, scrolled && styles.shadow)}>
         <div className={styles.linksCont}>
+          <Image src={UsamaBilal} alt="Usama Bilal" className={styles.usamaImg} />
           {LINKS.map((title) => (
             <ScrollLink
               key={title}
@@ -47,7 +50,7 @@ const Navbar = () => {
               className={styles.link}
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-80}
               duration={500}
             >
               {title}
@@ -76,7 +79,7 @@ const Navbar = () => {
                     className={styles.link}
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-80}
                     duration={500}
                     onClick={toggleDrawer}
                   >

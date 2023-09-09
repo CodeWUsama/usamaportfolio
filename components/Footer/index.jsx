@@ -1,9 +1,7 @@
 import Link from 'react-scroll/modules/components/Link';
-import Image from 'next/image';
 
 import { LINKS, LINKS_ICONS } from '@/constants/navigation';
 import SOCIAL_LINKS from '@/constants/sociallinks';
-import UsamaBilal from '@/public/assets/usamabilal-circular.png';
 
 import styles from './styles.module.scss';
 
@@ -26,7 +24,7 @@ const Footer = () => (
             return (
               <div className={styles.linkCont} key={link}>
                 <Icon />
-                <Link to={link} className={styles.link} spy={true} smooth={true} offset={-70} duration={500}>
+                <Link to={link} className={styles.link} spy={true} smooth={true} offset={-80} duration={500}>
                   {link}
                 </Link>
               </div>
@@ -49,7 +47,6 @@ const Footer = () => (
       <h3 className={styles.footerText}>
         © {new Date().getFullYear()} Made with love - <strong>Usama Bilal</strong>
       </h3>
-      <Image alt="Usama Bilal" src={UsamaBilal} className={styles.icon} title="Usama Bilal" />
     </div>
   </div>
 );

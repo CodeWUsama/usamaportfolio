@@ -28,6 +28,7 @@
 .linksCont {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 
 .rootMobile {
@@ -67,6 +68,11 @@
   box-shadow: #eaecee 0px 1px 2px 0px;
   -webkit-box-shadow: #eaecee 0px 1px 2px 0px;
   -moz-box-shadow: #eaecee 0px 1px 2px 0px;
+}
+
+.usamaImg {
+  height: 60px;
+  width: 60px;
 }
 
 @media (max-width: 900px) {
